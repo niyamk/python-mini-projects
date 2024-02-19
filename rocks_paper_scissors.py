@@ -1,18 +1,18 @@
 import random
 l = ['rocks','papers','scissors']
-  # ['scissors','rocks','papers']
-# l2 = l.insert(0,l.pop(1)
+print('choose from ',l)
 l2 = l.copy()
 l2.insert(0,l2.pop())
 run = 'y'
-while run == 'y':
+while run.lower() == 'y':
     user = input('Enter : ')
     bot = random.choice(l)
     print(f'user -> {user} , bot -> {bot}')
     if user == bot:
         print('draw')
     elif l.index(user)==l2.index(bot):
-        print('bot wins')
-    else:
         print('user wins')
+    else:
+        print('bot wins')
+    run = input('Enter y to continue : ')
 # print(f'{l} {l2}')
