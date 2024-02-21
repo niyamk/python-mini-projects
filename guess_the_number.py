@@ -16,9 +16,7 @@ else:
             print('you guessed the word!!')
             break
         print('guessed too high') if user>bot else print('guessed too small') 
-        print('number of guesses left => ',max_no_guess)
         max_no_guess-=1
+        print('number of guesses left => ',max_no_guess)
     else :
-        print('stopped')
-    if max_no_guess == 0:
-        print('you lost , number of guesses left -> ',max_no_guess) 
+        print('YOU LOST')
