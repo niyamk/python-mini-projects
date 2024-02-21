@@ -15,4 +15,3 @@ while run.lower() == 'y':
     else:
         print('bot wins')
     run = input('Enter y to continue : ')
-# print(f'{l} {l2}')
